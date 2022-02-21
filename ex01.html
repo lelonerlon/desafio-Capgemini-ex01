@@ -1,22 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questão 1</title>
+</head>
+
+<body>
 
 
-<script>
+  <script>
 
- 
-  function escadaCrescente(item) {
-    let lista = [];
-    for (let i = 0; i < item; i++) {
-      lista.push(" ".repeat(item - i - 1) + "#".repeat(i + 1))
+    function escadaCrescente(item) {
+      let lista = [];
 
+      for (let i = 0; i < item; i++) {
+        lista.push(" ".repeat(item - i - 1) + "*".repeat(i + 1))
+
+      }
+      for (const item of lista) {
+        console.log(item);
+      }
     }
-    for (const item of lista) {
-      console.log(item);
-    }
-  }
-  const qtdLinha = parseInt(prompt("Insira a quantidade de Linhas"));
+    const qtdLinha = parseInt(prompt("Insira a quantidade de Linhas"));
 
-  escadaCrescente(qtdLinha);
+    escadaCrescente(qtdLinha);
 
-</script>
+  </script>
+</body>
+
+</html>
